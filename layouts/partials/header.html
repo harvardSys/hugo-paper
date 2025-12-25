@@ -7,11 +7,6 @@
       href="{{- `` | absURL -}}"
       >{{ site.Title }}</a
     >
-    <div
-      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer {{ if site.Params.monoDarkIcon }}[background:url(./theme.svg)_left_center/cover_no-repeat] dark:invert{{ else }}[background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)]{{ end }} dark:[background-position:right]"
-      role="button"
-      aria-label="Dark"
-    ></div>
   </div>
 
   <div
@@ -71,7 +66,7 @@
     {{- $url := .RelPermalink -}}<!---->
     {{- with site.Menus.main -}}
     <nav
-      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-6 rtl:space-x-reverse"
     >
       {{- range . -}}
       <a
@@ -85,7 +80,7 @@
 
     {{- with $.Scratch.Get "social_list" -}}
     <nav
-      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+      class="mt-12 flex justify-center space-x-6 lg:mt-0 lg:items-center ltr:lg:ml-10 rtl:space-x-reverse rtl:lg:mr-10 dark:invert"
     >
       {{- range . -}}<!---->
       <a
