@@ -1820,3 +1820,17 @@ article {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
 }
+/* Table of Contents */
+.toc {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.toc ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.toc li {
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -18,7 +18,12 @@
     </div>
     {{- end -}}
   </header>
-
+  {{ if .Params.showToc -}}
+  <div class="toc">
+    <h2>Table of Contents</h2>
+    {{ .TableOfContents }}
+  </div>
+  {{- end }}
   <section>{{- .Content -}}</section>
 
   <!-- Post Tags -->
