@@ -3,7 +3,11 @@
 <!-- Tag Title -->
 {{- if and .Title (eq .Type "tags") -}}
 <h1 class="mb-14">#{{- .Title -}}</h1>
+{{ else if .Params.showTitle -}}
+<h1 class="mb-14">{{ .Title }}</h1> 
 {{- end -}}
+
+  <section>{{- .Content -}}</section>
 
 <!-- $pages -->
 {{- $pages := union .RegularPages .Sections -}}<!---->
