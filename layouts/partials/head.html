@@ -37,6 +37,8 @@
   {{- $css := slice $main $custom | resources.Concat "main.css" | minify -}}
   <link rel="preload stylesheet" as="style" href="{{- $css.Permalink -}}" />
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
   <!-- dark icon -->
   {{- $dark_icon := "theme.png" -}}
   <!---->
