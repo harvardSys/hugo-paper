@@ -53,9 +53,13 @@ main {
 }
 
 .people-text {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   line-height: 1.25;
+}
+
+.people-links {
+  margin-top: 0.5rem !important;
 }
 
 .people-name {
