@@ -12,8 +12,7 @@
       {{- $single_author := or .Params.Author site.Author.name -}}
       <!---->
       {{- if $single_author -}}
-      <span class="mx-1">&middot;</span>
-      <span>{{- $single_author -}}</span>
+      <span class="mx-1">&middot;</span><span>{{- $single_author -}}</span>
       {{- end -}}
     </div>
     {{- end -}}
