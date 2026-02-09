@@ -65,7 +65,7 @@ $paginator.Pages -}}<!---->
     <time class="text-sm antialiased opacity-60"
       >{{ .Date | time.Format ":date_medium" }}</time
     >
-    <div>{{ .Summary }}</div>
+    {{ .Summary }}
     <p class="mt-1.5"><a class="link block" href="{{ .Permalink }}">Read full post →</a></p>
   </div>
 {{- end -}}
