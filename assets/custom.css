@@ -100,3 +100,17 @@ main {
   text-decoration: underline;
 }
 
+.header-shield {
+  font-size: 2.5rem;
+  height: 45px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+@media (max-width: 405px) {
+  .header-shield {
+    display: none;
+  }
+}
