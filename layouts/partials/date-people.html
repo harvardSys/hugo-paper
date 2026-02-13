@@ -1,0 +1,20 @@
+<div class="text-sm antialiased opacity-60">
+  {{- $datetime := default .Date .Params.eventTime -}}
+  {{- if $datetime -}}
+  <time>
+    {{- if .Params.eventTime -}}
+        {{- $datetime | time.Format "Jan 2, 2006 3:04 PM" -}}
+    {{- else -}}
+        {{- $datetime | time.Format ":date_medium" -}}
+    {{- end -}}
+    {{- if .Params.location -}}
+    <span class="mx-1">&middot;</span> {{- .Params.location -}}
+    {{- end -}}
+  </time>
+  {{- end -}}<!---->
+  {{- $single_author := or .Params.author .Params.speaker site.Author.name -}}
+  <!---->
+  {{- if $single_author -}}
+  <span class="mx-1">&middot;</span><span>{{- $single_author -}}</span>
+  {{- end -}}
+</div>
