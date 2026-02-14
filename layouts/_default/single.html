@@ -2,7 +2,7 @@
 
 <article>
   <header class="mb-8">
-    <h1 class="my-0! pb-2.5">{{- .Title -}}</h1>
+    <h1 class="my-0! pb-2.5">{{- if eq .Section "seminar" -}}<span class="seminar-tag text-3xl">Seminar</span>{{- end -}}{{- .Title -}}</h1>
 
     {{- if ne .Type "page" -}}
     {{- partial "date-people.html" . -}}

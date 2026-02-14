@@ -1,5 +1,5 @@
 /* Place custom css here. */
-@reference './app.css';
+
 
 .seas-logo {
   width: auto;
@@ -114,3 +114,18 @@ main {
     display: none;
   }
 }
+
+.seminar-tag {
+  border-style: solid;
+  background-color: var(--tw-prose-headings);
+  color: white;
+  border-radius: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
