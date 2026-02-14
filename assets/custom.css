@@ -129,3 +129,25 @@ main {
   margin-right: 10px;
 }
 
+.seminar-dynamic-tag {
+  display: inline-block;
+  color: white;
+  border-radius: 6px; /* Example: rounded-full or a specific px value */
+  padding: 0.25rem 0.5rem; /* px-2 py-0.5 */
+  font-size: 0.875em; /* text-sm */
+  font-weight: 600; /* font-semibold */
+  margin-right: 0.5rem; /* ml-2 (changed to mr-2 as it's now at the front) */
+  white-space: nowrap; /* Prevent tag from breaking lines */
+}
+
+.seminar-dynamic-tag.seminar-tag-today {
+  background-color: #A51C30; /* Red */
+}
+
+/* Default color for other dynamic tags (Tomorrow and Recent) */
+.seminar-dynamic-tag.seminar-tag-tomorrow,
+.seminar-dynamic-tag.seminar-tag-recent,
+.seminar-dynamic-tag.seminar-tag-upcoming {
+  background-color: #4e88c7; /* Blue */
+}
+

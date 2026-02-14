@@ -1,7 +1,7 @@
 <div class="text-sm antialiased">
   {{- $datetime := default .Date .Params.eventTime -}}
   {{- if $datetime -}}
-  <time>
+  <time id="event-date-{{ $datetime | time.Format "20060102" }}">
     {{- if .Params.eventTime -}}
         {{- $datetime | time.Format "Jan 2, 2006 3:04 PM" -}}
     {{- else -}}
