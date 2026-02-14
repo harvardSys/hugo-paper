@@ -115,6 +115,7 @@ main {
   }
 }
 
+/* Remove old seminar-tag styling as it's no longer used */
 .seminar-tag {
   border-style: solid;
   background-color: var(--tw-prose-headings);
@@ -127,6 +128,16 @@ main {
   font-weight: 400;
   margin-bottom: 5px;
   margin-right: 10px;
+}
+
+.seminar-eyebrow {
+  font-size: 0.875em; /* Small */
+  text-transform: uppercase;
+  font-weight: 700; /* Bold */
+  color: #A51C30; /* Dark gray */
+  margin-bottom: 0.25rem; /* Space below eyebrow */
+  display: block; /* Ensure it takes its own line */
+  line-height: 1; /* Tighter line height */
 }
 
 .seminar-dynamic-tag {
