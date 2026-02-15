@@ -115,21 +115,6 @@ main {
   }
 }
 
-/* Remove old seminar-tag styling as it's no longer used */
-.seminar-tag {
-  border-style: solid;
-  background-color: var(--tw-prose-headings);
-  color: white;
-  border-radius: 6px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 6px;
-  padding-right: 6px;
-  font-weight: 400;
-  margin-bottom: 5px;
-  margin-right: 10px;
-}
-
 .seminar-eyebrow {
   font-size: 0.875em; /* Small */
   text-transform: uppercase;
@@ -142,11 +127,12 @@ main {
 
 .seminar-dynamic-tag {
   display: inline-block;
+  text-transform: uppercase;
   color: white;
   border-radius: 6px; /* Example: rounded-full or a specific px value */
-  padding: 0.25rem 0.5rem; /* px-2 py-0.5 */
+  padding: 0.05rem 0.4rem; /* px-2 py-0.5 */
   font-size: 0.875em; /* text-sm */
-  font-weight: 600; /* font-semibold */
+  font-weight: 700; /* bold */
   margin-right: 0.5rem; /* ml-2 (changed to mr-2 as it's now at the front) */
   white-space: nowrap; /* Prevent tag from breaking lines */
 }
