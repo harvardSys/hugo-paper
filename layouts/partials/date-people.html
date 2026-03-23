@@ -12,7 +12,7 @@
     {{- end -}}
   </time>
   {{- end -}}<!---->
-  {{- $single_author := or .Params.author .Params.speaker site.Author.name -}}
+  {{- $single_author := or .Params.author .Params.speaker site.Params.author -}}
   <!---->
   {{- if $single_author -}}
   <span class="mx-1">&middot;</span><span>{{- $single_author -}}</span>
